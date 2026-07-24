@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>5.5E cards</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Germania+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="module" src="app.js"></script>
+    </head>
+    <body>
+        <template id="card-template">
+            <div class="card">
+                <div class="card-head"></div>
+                <div class="card-main">
+                    <div class="card-img">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/010/331/415/small/watercolor-paint-stains-backgrounds-art-element-illustration-for-your-design-free-png.png" />
+                        <img src=""/>
+                    </div>
+                    <div class="card-stat">
+                    </div>
+                    <div class="card-text"></div>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="card-type"></div>
+                        <div class="card-rarity"></div>
+                    </div>
+                    <div>
+                        <div class="card-value"></div>
+                        <div class="card-weight"></div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <header>
+            <button onclick="window.location.href = 'card.html';">Card design</button>
+            <input type="file" id="csv-file" accept=".csv" />
+        </header>
+        <main id="cards">
+        </main>
+        <footer>
+            DnD 5.5E item's card generator 2026.
+        </footer>
+    </body>
+</html>

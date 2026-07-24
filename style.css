@@ -1,0 +1,173 @@
+:root {
+    --card-width: 2.5in;
+    --card-height: 3.5in;
+    --card-padding: 0.05in;
+
+    --card-outer-border: 3px;
+    --card-inner-border: 2px;
+
+    --card-head-width: 2.2in;
+    --card-head-height: 0.28in;
+
+    --card-img-height: 1.2in;
+
+    --card-footer-height: 0.14in;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin-bottom: var(--card-padding);
+    padding: var(--card-padding);
+    background-color: lightcoral;
+}
+
+main {
+    margin-bottom: var(--card-padding);
+    padding: var(--card-padding);
+    background-color: lightgray;
+}
+
+footer {
+    padding: var(--card-padding);
+    background-color: lightblue;
+}
+
+#cards {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(3, var(--card-width));
+    gap: var(--card-padding);
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: var(--card-padding);
+    background-color: white;
+}
+
+.card-head {
+    width: var(--card-head-width);
+    height: var(--card-head-height);
+    --card-canvas-width: calc(var(--card-width) - var(--card-padding) * 2);
+    --margin-side: calc((var(--card-canvas-width) - var(--card-head-width)) / 2);
+    margin: 0 var(--margin-side);
+    border-style: solid;
+    border-width: var(--card-outer-border);
+    border-radius: 999px;
+    background-color: white;
+    text-align: center;
+    font-family: "Germania One", system-ui;
+    font-weight: 700;
+    font-size: 125%;
+    /* Place head on Z layer 1. */
+    position: relative;
+    z-index: 1;
+}
+
+.card-main {
+    --margin-top: calc(var(--card-head-height) / 2);
+    --card-canvas-height: calc(var(--card-height) - var(--card-padding) * 2);
+    --height: calc(var(--card-canvas-height) - var(--margin-top) - var(--card-footer-height));
+    height: var(--height);
+    margin: calc(0in - var(--margin-top)) 0 0 0;
+    padding: calc(var(--margin-top) - var(--card-outer-border)) 0 0 0;
+    border-style: solid;
+    border-width: var(--card-outer-border);
+}
+
+.card-img {
+    position: relative;
+    height: var(--card-img-height);
+    border-style: solid;
+    border-width: 0 0 var(--card-inner-border) 0;
+}
+
+.card-img > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    opacity: 65%;
+    --rotate: 0deg;
+    --scale: 1;
+    transform: translate(-50%, -50%);
+}
+
+.card-img > img:last-child {
+    height: 90%;
+    opacity: 100%;
+    transform: translate(-50%, -50%) rotate(var(--rotate)) scale(var(--scale));
+}
+
+.card-stat {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 60%;
+    gap: calc(var(--card-inner-border));
+    background-color: black;
+    border-style: solid;
+    border-width: 0 0 var(--card-inner-border) 0;
+}
+
+.card-stat > div {
+    flex-grow: 1;
+    flex-basis: 25%;
+    min-width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.card-text {
+    padding: var(--card-padding);
+    font-size: 55%;
+}
+
+.card-footer {
+    height: var(--card-footer-height);
+    padding: 0 calc(var(--card-outer-border) / 2);
+    display: flex;
+    justify-content: space-between;
+    font-size: 60%;
+}
+
+.card-footer > div {
+    display: flex;
+    gap: var(--card-padding);
+}
+
+.uncommon { color: green; }
+.rare { color: blue; }
+.very-rare { color: yellow; }
+.legendary { color: purple; }
+
+@media print {
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    header, footer {
+        display: none;
+    }
+
+    #cards {
+        justify-content: center;
+        gap: 0.5mm;
+        padding: 0.5mm;
+    }
+
+    .card {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+}
