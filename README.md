@@ -6,7 +6,7 @@ Create printable cards for DnD 5.5E items from a CSV file.
 
 - [X] CSV to html converter
 - [X] CSS style for the card
-- [X] CSS style for the webpage
+- [ ] CSS style for the webpage
 - [ ] PDF printer version
 - [ ] Print button
 - [ ] Single card editor (designer)

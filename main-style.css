@@ -1,0 +1,107 @@
+:root {
+    --background-color1: #1f1f1f;
+    --foreground-color1: #86b6ff;
+    --foreground-color2: #1fff80;
+    --foreground-color3: #ffdd00;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 1vh 0;
+    color: var(--foreground-color3);
+    font-family: "Germania One", system-ui;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: white solid;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+aside {
+    width: 15vw;
+    min-width: 192px;
+    max-width: 384px;
+    border-right: white solid;
+    padding: 1vh 1vw;
+}
+
+section {
+    padding: 1vh 1vw;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+footer {
+    padding: 1vh 0;
+    background-color: var(--background-color1);
+    text-align: center;
+    border-top: white solid;
+}
+
+a {
+    text-decoration: none;
+    color: #86b6ff;
+}
+
+#cards {
+    display: grid;
+    grid-auto-flow: dense;
+    --columns: 3;
+    grid-template-columns: repeat(var(--columns), var(--card-width));
+    gap: var(--card-padding);
+    max-height: calc(var(--card-height));
+}
+
+@page {
+    margin: 0;
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    header, footer, aside {
+        display: none;
+    }
+
+    main {
+        align-items: start;
+    }
+
+    section {
+        overflow-y: visible;
+        padding: 0;
+    }
+
+    #cards {
+        grid-template-columns: repeat(3, var(--card-width));
+        max-height: none;
+        gap: 0;
+    }
+
+    .card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
