@@ -15,6 +15,9 @@ Create printable cards for DnD 5.5E items from a CSV file.
 - [ ] Item search
     - [ ] Find item on 5e.tools
     - [ ] Add picture
+- [ ] Add demo/example file
+- [ ] Add responsive design
+- [ ] Add support for local pictures
 
 # Usage
 
