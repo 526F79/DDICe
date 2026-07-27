@@ -10,7 +10,6 @@ function setCardColumnCount() {
     cards.style.setProperty('--columns', width);
 }
 
-window.addEventListener('load', setCardColumnCount);
 window.addEventListener('resize', setCardColumnCount);
 
 function increaseCardHeight(card) {
@@ -41,8 +40,6 @@ function increaseCardHeights() {
         increaseCardHeight(cards[i]);
     }
 }
-
-window.addEventListener('load', increaseCardHeights);
 
 function getColumnIndex(column) {
     for (let i = 0; i < header.length; i++) {
@@ -161,11 +158,22 @@ function addCard(parrent, data) {
     increaseCardHeights(card);
 }
 
-document.getElementById("new-card").addEventListener("click", async (e) => {
+function appendCard() {
     const cards = document.getElementById('cards');
     const data = ["Name","Source","Page","Rarity","Type","Attunement","Damage","Properties","Mastery","Other","Weight","Value","Text","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F12%2FDnD-Symbol.png&f=1&nofb=1&ipt=9e77008fc76ea4788d647b4b63ea67e8e3307b56410cb5764559a807e2768b57","1","0deg"];
     addCard(cards, data);
+}
+
+document.getElementById("new-card").addEventListener("click", async (e) => {
+    appendCard();
 });
+
+window.addEventListener('load', () => {
+  appendCard()
+  setCardColumnCount();
+  increaseCardHeights();
+});
+
 
 document.getElementById("csv-file").addEventListener("change", async (e) => {
     const input = e.target.files[0];
@@ -184,3 +192,8 @@ document.getElementById("csv-file").addEventListener("change", async (e) => {
     cards.innerHTML = "";
     reader.readAsText(input);
 });
+
+document.getElementById("csv-file-selector").addEventListener("click", () => {
+    document.getElementById("csv-file").click();
+});
+

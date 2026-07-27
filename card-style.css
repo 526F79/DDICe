@@ -22,6 +22,7 @@
     padding: var(--card-padding);
     background-color: var(--card-color);
     color: black;
+    transition: 0.3s;
 }
 
 .card:hover {
