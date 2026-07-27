@@ -40,40 +40,15 @@
         <header>--- DnD Item Card exporter ---</header>
         <main>
             <aside>
-                <input type="file" id="csv-file" accept=".csv" />
-                <input type="button" id="new-card" value="New card" />
+                <a class="control-button" href="./Items.csv" download>Download demo file</a>
+                <input class="control-button" type="file" id="csv-file" accept=".csv" />
+                <button class="control-button" id="csv-file-selector">Load file</button>
+                <button class="control-button" id="new-card">New card</button>
+                <button class="control-button" onclick="window.print()">Print</button>
+                <a class="control-button" href="https://github.com/526F79/DDICe/blob/main/README.md">Documentation</a>
             </aside>
             <section>
                 <div id="cards">
-                    <div class="card">
-                        <div class="card-head">Item</div>
-                        <div class="card-main">
-                            <div class="card-img">
-                                <img src="https://static.vecteezy.com/system/resources/thumbnails/010/331/415/small/watercolor-paint-stains-backgrounds-art-element-illustration-for-your-design-free-png.png" />
-                                <img style="--scale: 1; --rotate: 0deg;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F12%2FDnD-Symbol.png&f=1&nofb=1&ipt=9e77008fc76ea4788d647b4b63ea67e8e3307b56410cb5764559a807e2768b57"/>
-                            </div>
-                            <div class="card-stat">
-                                <div class="card-dmg">A</div>
-                                <div class="card-mastery">B</div>
-                                <div class="card-ac">C</div>
-                                <div class="card-property">D</div>
-                                <div class="card-property">D</div>
-                            </div>
-                            <div class="card-text">
-                                Description...
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div>
-                                <div class="card-type">Item</div>
-                                <div class="card-rarity rare">rare</div>
-                            </div>
-                            <div>
-                                <div class="card-value">999 GP</div>
-                                <div class="card-weight">999 lb</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>

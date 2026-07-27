@@ -2,28 +2,62 @@
 
 Create printable cards for DnD 5.5E items from a CSV file.
 
-# TODO list
+```
+██████╗ ██████╗ ██╗ ██████╗███████╗
+██╔══██╗██╔══██╗██║██╔════╝██╔════╝
+██║  ██║██║  ██║██║██║     █████╗
+██║  ██║██║  ██║██║██║     ██╔══╝
+██████╔╝██████╔╝██║╚██████╗███████╗
+╚═════╝ ╚═════╝ ╚═╝ ╚═════╝╚══════╝
+```
 
-- [X] CSV to html converter
-- [X] CSS style for the card
-- [X] CSS style for the webpage
-- [ ] PDF printer version
-- [ ] Print button
-- [ ] Single card editor (designer)
-    - [ ] Select card
-    - [X] Add add card
-- [ ] Item search
-    - [ ] Find item on 5e.tools
-    - [ ] Add picture
+# 🕑 Features in the waiting room
 
-# Usage
+- [ ] Add a card editor (designer)
+- [ ] Add item search on 5e.tools
+- [ ] Add mobille support
+- [ ] Add support for local pictures
 
-You can export a CSV file from pinned items in [5e tools](https://5e.tools/items). The exported file will contain the cgecked columns in the row `5e tools`. The checked columns in `Usage` are being used to create the card.
+# 📄 Usage guide
 
+## 1. Download demo file
 
-The next columns are accepted in the CSV files. The order does not matter. Other columns will not be used.
+Download the demo file to view the structure of the CSV file.
+
+We recommend one of these tools to edit csv files:
++ MS Office 365 Excel
++ Onlyoffice Spreadsheets
++ Google docs spreadsheets
++ Rainbow CSV VScode extension (We use this 🙌)
+
+> [!WARNING]
+> The exported csv files from [5e tools](https://5e.tools/items) are missing next the columns: `other`, `Image-url`, `Image-Scale`, `Image-Rotation`
+
+## 2. Create CSV file
+
+You can start from our demo file or from an exported item list from [5e tools](https://5e.tools/items).
+
+### Using demo file
+
+This file is ready to use.
+
+### Using 5e.tools file
+
+In this table you will see the missing columns of the 5e.tools file. Add these in the right order.
 
 |**Columns**|Name|Source|Page|Rarity|Type|Attunement|Damage|Properties|Mastery|Other|Weight|Value|Text|Image-url|Image-Scale|Image-Rotation|
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |**Usage**|✔️|❌|❌|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|
 |**5e tools**|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|❌|✔️|✔️|✔️|❌|❌|❌|
+
+
+## 3. Add new card
+
+Add a new card to edit in the browser.
+
+> [!TIP]
+> A card editor will be added soon. Use the browser developer function for now to edit your card.
+
+## 3. Print
+
+Use `Ctrl + P` or the print button to print your cards. These cards are designed to use the same size as Pokemon cards (2.5in X 3.5 in).

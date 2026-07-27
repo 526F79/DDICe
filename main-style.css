@@ -72,6 +72,31 @@ a {
     max-height: calc(var(--card-height));
 }
 
+.control-button {
+    text-decoration: none;
+    margin-bottom: 1vh;
+    padding: 0.5vh;
+    background-color: var(--foreground-color1);
+    color: var(--background-color1);
+    border-style: solid;
+    border-color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    transition: 0.3s;
+    border-radius: 0.3em;
+}
+
+.control-button:hover {
+    background-color: var(--foreground-color2);
+}
+
+input.control-button {
+    display: none;
+}
+
 @page {
     margin: 0;
 }
