@@ -168,8 +168,17 @@ document.getElementById("new-card").addEventListener("click", async (e) => {
     appendCard();
 });
 
+function deleteCards() {
+    cards.innerHTML = "";
+    appendCard();
+}
+
+document.getElementById("delete-cards").addEventListener("click", async (e) => {
+    deleteCards();
+});
+
 window.addEventListener('load', () => {
-  appendCard()
+  appendCard();
   setCardColumnCount();
   increaseCardHeights();
 });
