@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>DDICe</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Germania+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="module" src="app.js"></script>
+    </head>
+    <body>
+        <template id="card-template">
+            <div class="card">
+                <div class="card-head"></div>
+                <div class="card-main">
+                    <div class="card-img">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/010/331/415/small/watercolor-paint-stains-backgrounds-art-element-illustration-for-your-design-free-png.png" />
+                        <img src=""/>
+                    </div>
+                    <div class="card-stat">
+                    </div>
+                    <div class="card-text"></div>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="card-type"></div>
+                        <div class="card-rarity"></div>
+                    </div>
+                    <div>
+                        <div class="card-value"></div>
+                        <div class="card-weight"></div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <header>DnD Item Card exporter</header>
+        <div class="no-support"><img src="./assets/crisis.png" />Low resolutions are not yet supported</div>
+        <nav>
+            <a class="control-button" href="./Items.csv" download>⬇️ Download demo file</a>
+            <input class="control-button" type="file" id="csv-file" accept=".csv" />
+            <button class="control-button" id="csv-file-selector">📁 Load file</button>
+            <button class="control-button" id="new-card">➕ New card</button>
+            <button class="control-button" id="delete-cards">🗑️ Delete all cards</button>
+            <button class="control-button" onclick="window.print()">🖨️ Print</button>
+            <a class="control-button" href="https://github.com/526F79/DDICe/blob/main/README.md">📕 Documentation</a>
+        </nav>
+        <main>
+            <aside>
+                <div style="padding-bottom: 0.5vh; color: var(--foreground-color3); text-align: left; font-size: 0.8em;"><strong>John:</strong> OMG, we don’t have any controls 😱</div>
+                <div style="padding-bottom: 0.5vh; color: var(--foreground-color2); text-align: right; font-size: 0.8em;"><strong>Rick:</strong> No you idiot, they’re not implemented yet. The devs are working on it.</div>
+                <div style="padding-bottom: 0.5vh; color: var(--foreground-color3); text-align: left; font-size: 0.8em;"><strong>John:</strong> Oef, I thought I lost it</div>
+                <div style="padding-bottom: 0.5vh; color: var(--foreground-color2); text-align: right; font-size: 0.8em;"><strong>Rick:</strong> These features will be coming soon 😊</div>
+            </aside>
+            <section>
+                <div id="cards">
+                </div>
+            </section>
+        </main>
+        <footer>
+            DDICe: DnD Item Card exporter - 2026 - <a href="https://github.com/526F79/DDICe">GitHub repo</a>
+        </footer>
+    </body>
+</html>
