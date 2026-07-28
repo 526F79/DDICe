@@ -36,8 +36,7 @@
                 </div>
             </div>
         </template>
-        <header>DnD Item Card exporter</header>
-        <div class="no-support"><img src="./assets/crisis.png" />Low resolutions are not yet supported</div>
+        <header>--- DnD Item Card exporter ---</header>
         <nav>
             <a class="control-button" href="./Items.csv" download>⬇️ Download demo file</a>
             <input class="control-button" type="file" id="csv-file" accept=".csv" />
@@ -49,10 +48,17 @@
         </nav>
         <main>
             <aside>
-                <div style="padding-bottom: 0.5vh; color: var(--foreground-color3); text-align: left; font-size: 0.8em;"><strong>John:</strong> OMG, we don’t have any controls 😱</div>
-                <div style="padding-bottom: 0.5vh; color: var(--foreground-color2); text-align: right; font-size: 0.8em;"><strong>Rick:</strong> No you idiot, they’re not implemented yet. The devs are working on it.</div>
-                <div style="padding-bottom: 0.5vh; color: var(--foreground-color3); text-align: left; font-size: 0.8em;"><strong>John:</strong> Oef, I thought I lost it</div>
-                <div style="padding-bottom: 0.5vh; color: var(--foreground-color2); text-align: right; font-size: 0.8em;"><strong>Rick:</strong> These features will be coming soon 😊</div>
+                <input id="fname" type="text" value="Name" />
+                <input id="fdamage" type="text" value="Damage" />
+                <input id="fmastery" type="text" value="Mastery" />
+                <input id="fattunement" type="text" value="Attunement" />
+                <input id="fproperties" type="text" value="Properties" />
+                <input id="fother" type="text" value="Other" />
+                <textarea id="fdescription">Description</textarea>
+                <input id="ftype" type="text" value="Type" />
+                <input id="frarity" type="text" value="Rarity" />
+                <input id="fvalue" type="text" value="Value" />
+                <input id="fweight" type="text" value="Weight" />
             </aside>
             <section>
                 <div id="cards">
