@@ -22,6 +22,7 @@ Create printable cards for DnD 5.5E items from a CSV file.
 
 - [X] 🧩 Web page setup (HTML, CSS, JS)
 - [X] 🧩 CSV to HTML card elements
+- [ ] 🛠️ Print cards
 - [ ] 🛠️ Add a card editor (designer)
 - [ ] 🗓️ Add item search on 5e.tools
 - [ ] 💤 Add support for local pictures
