@@ -76,7 +76,7 @@ a {
     color: #86b6ff;
 }
 
-@media (min-width:1025px) {
+@media (min-width:1025px), print {
     .no-support {
         display: none;
     }
