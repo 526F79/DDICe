@@ -103,9 +103,11 @@ a {
         display: grid;
         align-content: start;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(6, 2%) 88%;
+        grid-template-rows: repeat(8, 2%) 88%;
         grid-template-areas:
         "fname fname"
+        "fbackground fbackground"
+        "fimage fimage"
         "fdamage fmastery"
         "fattunement fproperties"
         "fother fother"
@@ -150,6 +152,8 @@ a {
     }
 
     #fname { grid-area: fname; }
+    #fbackground { grid-area: fbackground; }
+    #fimage { grid-area: fimage; }
     #fdamage { grid-area: fdamage; }
     #fmastery { grid-area: fmastery; }
     #fattunement { grid-area: fattunement; }

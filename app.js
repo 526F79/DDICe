@@ -216,6 +216,8 @@ var selectedCard;
 function updateCardEditor() {
     const q = (selector) => selectedCard.querySelector(selector)?.innerHTML ?? "";
     document.getElementById('fname').value = q('.card-head');
+    document.getElementById('fbackground').value = selectedCard.querySelector('.card-background')?.src ?? "";
+    document.getElementById('fimage').value = selectedCard.querySelector('.card-image')?.src ?? "";
     document.getElementById('fdamage').value = q('.card-damage');
     document.getElementById('fmastery').value = q('.card-mastery');
     document.getElementById('fattunement').value = q('.card-attunement');
