@@ -1,15 +1,17 @@
-# DDICe: DnD Item Card exporter
-
-Create printable cards for DnD 5.5E items from a CSV file.
-
-```
+<div style="display:flex; justify-content:center;">
+<pre style="margin:0; text-align:center; line-height:1.2;">
 ██████╗ ██████╗ ██╗ ██████╗███████╗    ██████╗  ██████╗ ██████╗ ██╗  ██╗
 ██╔══██╗██╔══██╗██║██╔════╝██╔════╝    ╚════██╗██╔═████╗╚════██╗██║  ██║
 ██║  ██║██║  ██║██║██║     █████╗       █████╔╝██║██╔██║ █████╔╝███████║
 ██║  ██║██║  ██║██║██║     ██╔══╝      ██╔═══╝ ████╔╝██║██╔═══╝ ╚════██║
 ██████╔╝██████╔╝██║╚██████╗███████╗    ███████╗╚██████╔╝███████╗     ██║
 ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝╚══════╝    ╚══════╝ ╚═════╝ ╚══════╝     ╚═╝
-```
+</pre>
+</div>
+
+---
+
+DDICe: DnD Item Card exporter. Create printable cards for DnD 5.5E items from a CSV file.
 
 # 🕑 Features in the waiting room
 
