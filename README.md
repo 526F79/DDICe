@@ -1,33 +1,23 @@
-# DDICe: DnD Item Card exporter
-
-Create printable cards for DnD 5.5E items from a CSV file.
-
-```
+<div align="center">
+<pre>
 ██████╗ ██████╗ ██╗ ██████╗███████╗    ██████╗  ██████╗ ██████╗ ██╗  ██╗
 ██╔══██╗██╔══██╗██║██╔════╝██╔════╝    ╚════██╗██╔═████╗╚════██╗██║  ██║
 ██║  ██║██║  ██║██║██║     █████╗       █████╔╝██║██╔██║ █████╔╝███████║
 ██║  ██║██║  ██║██║██║     ██╔══╝      ██╔═══╝ ████╔╝██║██╔═══╝ ╚════██║
 ██████╔╝██████╔╝██║╚██████╗███████╗    ███████╗╚██████╔╝███████╗     ██║
 ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝╚══════╝    ╚══════╝ ╚═════╝ ╚══════╝     ╚═╝
-```
+</pre>
+</div>
 
-# 🕑 Features in the waiting room
+---
 
-**Feature status:**
-**✅ tested and reviewed,**
-**🧩 implemented,**
-**🛠️ working on it,**
-**🗓️ planned,**
-**💤 not yet planned**
+DDICe: DnD Item Card exporter. Create printable cards for DnD 5.5E items from a CSV file.
 
-- [X] 🧩 Web page setup (HTML, CSS, JS)
-- [X] 🧩 CSV to HTML card elements
-- [ ] 🛠️ Add a card editor (designer)
-- [ ] 🗓️ Add item search on 5e.tools
-- [ ] 💤 Add support for local pictures
-- [ ] 💤 Add mobille support
+# 🖼️ Demo preview
 
-# 📄 Usage guide
+![demo-screenshot](./assets/demo-screenshot.png)
+
+# 📄 User guide
 
 ## 1. Download demo file
 
@@ -67,11 +57,11 @@ Add a new card to edit in the browser.
 > [!TIP]
 > A card editor will be added soon. Use the browser developer function for now to edit your card.
 
-## 3. Print
+## 4. Print
 
 Use `Ctrl + P` or the print button to print your cards. These cards are designed to use the same size as Pokemon cards (2.5in X 3.5 in).
 
-# Commit messages
+# 📩 Commit messages
 
 ```
 [ACTION] message
